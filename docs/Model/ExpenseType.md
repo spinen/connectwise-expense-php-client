@@ -15,7 +15,7 @@ Name | Type | Description | Notes
 **quantity_flag** | **bool** |  | [optional] 
 **inactive_flag** | **bool** |  | [optional] 
 **max_amount** | **double** |  | [optional] 
-**_info** | [**\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Metadata**](Metadata.md) | Metadata of the entity | [optional] 
+**_info** | [**\Spinen\ConnectWise\Clients\Expense\Model\Metadata**](Metadata.md) | Metadata of the entity | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

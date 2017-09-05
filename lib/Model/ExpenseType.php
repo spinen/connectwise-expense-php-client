@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model;
+namespace Spinen\ConnectWise\Clients\Expense\Model;
 
 use \ArrayAccess;
 
@@ -67,7 +67,7 @@ class ExpenseType implements ArrayAccess
         'quantity_flag' => 'bool',
         'inactive_flag' => 'bool',
         'max_amount' => 'double',
-        '_info' => '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Metadata'
+        '_info' => '\Spinen\ConnectWise\Clients\Expense\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -553,7 +553,7 @@ class ExpenseType implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\Expense\Model\Metadata
      */
     public function getInfo()
     {
@@ -562,7 +562,7 @@ class ExpenseType implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\Expense\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)
