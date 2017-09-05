@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Expense\Model;
+namespace Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model;
 
 use \ArrayAccess;
 
@@ -56,24 +56,24 @@ class ExpenseEntry implements ArrayAccess
       */
     protected static $swaggerTypes = [
         'id' => 'int',
-        'company' => '\Spinen\ConnectWise\Clients\Expense\Model\CompanyReference',
+        'company' => '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\CompanyReference',
         'charge_to_id' => 'int',
         'charge_to_type' => 'string',
-        'type' => '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseTypeReference',
-        'member' => '\Spinen\ConnectWise\Clients\Expense\Model\MemberReference',
-        'payment_method' => '\Spinen\ConnectWise\Clients\Expense\Model\PaymentMethodReference',
-        'classification' => '\Spinen\ConnectWise\Clients\Expense\Model\ClassificationReference',
+        'type' => '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseTypeReference',
+        'member' => '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\MemberReference',
+        'payment_method' => '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\PaymentMethodReference',
+        'classification' => '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ClassificationReference',
         'amount' => 'double',
         'billable_option' => 'string',
         'date' => '\DateTime',
         'location_id' => 'int',
         'business_unit_id' => 'int',
         'notes' => 'string',
-        'agreement' => '\Spinen\ConnectWise\Clients\Expense\Model\AgreementReference',
+        'agreement' => '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\AgreementReference',
         'invoice_amount' => 'double',
-        'taxes' => '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseTax[]',
-        'invoice' => '\Spinen\ConnectWise\Clients\Expense\Model\InvoiceReference',
-        '_info' => '\Spinen\ConnectWise\Clients\Expense\Model\Metadata'
+        'taxes' => '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseTax[]',
+        'invoice' => '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\InvoiceReference',
+        '_info' => '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Metadata'
     ];
 
     public static function swaggerTypes()
@@ -337,7 +337,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Gets company
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\CompanyReference
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\CompanyReference
      */
     public function getCompany()
     {
@@ -346,7 +346,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Sets company
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\CompanyReference $company Company or chargeToType is required
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\CompanyReference $company Company or chargeToType is required
      * @return $this
      */
     public function setCompany($company)
@@ -404,7 +404,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Gets type
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\ExpenseTypeReference
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseTypeReference
      */
     public function getType()
     {
@@ -413,7 +413,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Sets type
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\ExpenseTypeReference $type
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseTypeReference $type
      * @return $this
      */
     public function setType($type)
@@ -425,7 +425,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Gets member
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\MemberReference
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\MemberReference
      */
     public function getMember()
     {
@@ -434,7 +434,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Sets member
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\MemberReference $member
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\MemberReference $member
      * @return $this
      */
     public function setMember($member)
@@ -446,7 +446,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Gets payment_method
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\PaymentMethodReference
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\PaymentMethodReference
      */
     public function getPaymentMethod()
     {
@@ -455,7 +455,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Sets payment_method
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\PaymentMethodReference $payment_method
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\PaymentMethodReference $payment_method
      * @return $this
      */
     public function setPaymentMethod($payment_method)
@@ -467,7 +467,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Gets classification
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\ClassificationReference
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ClassificationReference
      */
     public function getClassification()
     {
@@ -476,7 +476,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Sets classification
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\ClassificationReference $classification
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ClassificationReference $classification
      * @return $this
      */
     public function setClassification($classification)
@@ -618,7 +618,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Gets agreement
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\AgreementReference
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\AgreementReference
      */
     public function getAgreement()
     {
@@ -627,7 +627,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Sets agreement
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\AgreementReference $agreement
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\AgreementReference $agreement
      * @return $this
      */
     public function setAgreement($agreement)
@@ -660,7 +660,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Gets taxes
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\ExpenseTax[]
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseTax[]
      */
     public function getTaxes()
     {
@@ -669,7 +669,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Sets taxes
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\ExpenseTax[] $taxes
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseTax[] $taxes
      * @return $this
      */
     public function setTaxes($taxes)
@@ -681,7 +681,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Gets invoice
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\InvoiceReference
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\InvoiceReference
      */
     public function getInvoice()
     {
@@ -690,7 +690,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Sets invoice
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\InvoiceReference $invoice
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\InvoiceReference $invoice
      * @return $this
      */
     public function setInvoice($invoice)
@@ -702,7 +702,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Gets _info
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\Metadata
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Metadata
      */
     public function getInfo()
     {
@@ -711,7 +711,7 @@ class ExpenseEntry implements ArrayAccess
 
     /**
      * Sets _info
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\Metadata $_info Metadata of the entity
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Metadata $_info Metadata of the entity
      * @return $this
      */
     public function setInfo($_info)

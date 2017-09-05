@@ -26,7 +26,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Expense\Api;
+namespace Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Api;
 
 use \Spinen\ConnectWise\Clients\Expense\ApiClient;
 use \Spinen\ConnectWise\Clients\Expense\ApiException;
@@ -96,7 +96,7 @@ class ExpenseTypesApi
      *
      * @param string $conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\Expense\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\Count
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Count
      */
     public function expenseTypesCountGet($conditions = null)
     {
@@ -113,7 +113,7 @@ class ExpenseTypesApi
      *
      * @param string $conditions  (optional)
      * @throws \Spinen\ConnectWise\Clients\Expense\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Expense\Model\Count, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Count, HTTP status code, HTTP response headers (array of strings)
      */
     public function expenseTypesCountGetWithHttpInfo($conditions = null)
     {
@@ -155,19 +155,19 @@ class ExpenseTypesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Expense\Model\Count',
+                '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Count',
                 '/expense/types/count'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Expense\Model\Count', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Count', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\Count', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Count', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -190,7 +190,7 @@ class ExpenseTypesApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\Expense\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[]
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[]
      */
     public function expenseTypesGet($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -212,7 +212,7 @@ class ExpenseTypesApi
      * @param int $page  (optional)
      * @param int $page_size  (optional)
      * @throws \Spinen\ConnectWise\Clients\Expense\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[], HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[], HTTP status code, HTTP response headers (array of strings)
      */
     public function expenseTypesGetWithHttpInfo($conditions = null, $order_by = null, $childconditions = null, $customfieldconditions = null, $page = null, $page_size = null)
     {
@@ -274,19 +274,19 @@ class ExpenseTypesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[]',
+                '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[]',
                 '/expense/types'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[]', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[]', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[]', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[]', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -379,7 +379,7 @@ class ExpenseTypesApi
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -397,7 +397,7 @@ class ExpenseTypesApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\Expense\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType
      */
     public function expenseTypesIdGet($id)
     {
@@ -414,7 +414,7 @@ class ExpenseTypesApi
      *
      * @param int $id  (required)
      * @throws \Spinen\ConnectWise\Clients\Expense\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType, HTTP status code, HTTP response headers (array of strings)
      */
     public function expenseTypesIdGetWithHttpInfo($id)
     {
@@ -464,19 +464,19 @@ class ExpenseTypesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType',
+                '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType',
                 '/expense/types/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -493,9 +493,9 @@ class ExpenseTypesApi
      * Spinen&#39;s PHP ConnectWise Client for Expense API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\Expense\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType
      */
     public function expenseTypesIdPatch($id, $operations)
     {
@@ -511,9 +511,9 @@ class ExpenseTypesApi
      * Spinen&#39;s PHP ConnectWise Client for Expense API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\PatchOperation[] $operations  (required)
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\PatchOperation[] $operations  (required)
      * @throws \Spinen\ConnectWise\Clients\Expense\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType, HTTP status code, HTTP response headers (array of strings)
      */
     public function expenseTypesIdPatchWithHttpInfo($id, $operations)
     {
@@ -572,19 +572,19 @@ class ExpenseTypesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType',
+                '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType',
                 '/expense/types/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -601,9 +601,9 @@ class ExpenseTypesApi
      * Spinen&#39;s PHP ConnectWise Client for Expense API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType $expense_type  (required)
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType $expense_type  (required)
      * @throws \Spinen\ConnectWise\Clients\Expense\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType
      */
     public function expenseTypesIdPut($id, $expense_type)
     {
@@ -619,9 +619,9 @@ class ExpenseTypesApi
      * Spinen&#39;s PHP ConnectWise Client for Expense API generated by Swagger Code Generator.
      *
      * @param int $id  (required)
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType $expense_type  (required)
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType $expense_type  (required)
      * @throws \Spinen\ConnectWise\Clients\Expense\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType, HTTP status code, HTTP response headers (array of strings)
      */
     public function expenseTypesIdPutWithHttpInfo($id, $expense_type)
     {
@@ -680,19 +680,19 @@ class ExpenseTypesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType',
+                '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType',
                 '/expense/types/{id}'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 200:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }
@@ -708,9 +708,9 @@ class ExpenseTypesApi
      *
      * Spinen&#39;s PHP ConnectWise Client for Expense API generated by Swagger Code Generator.
      *
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType $expense_type  (required)
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType $expense_type  (required)
      * @throws \Spinen\ConnectWise\Clients\Expense\ApiException on non-2xx response
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType
      */
     public function expenseTypesPost($expense_type)
     {
@@ -725,9 +725,9 @@ class ExpenseTypesApi
      *
      * Spinen&#39;s PHP ConnectWise Client for Expense API generated by Swagger Code Generator.
      *
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType $expense_type  (required)
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType $expense_type  (required)
      * @throws \Spinen\ConnectWise\Clients\Expense\ApiException on non-2xx response
-     * @return array of \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType, HTTP status code, HTTP response headers (array of strings)
+     * @return array of \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType, HTTP status code, HTTP response headers (array of strings)
      */
     public function expenseTypesPostWithHttpInfo($expense_type)
     {
@@ -774,19 +774,19 @@ class ExpenseTypesApi
                 $queryParams,
                 $httpBody,
                 $headerParams,
-                '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType',
+                '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType',
                 '/expense/types'
             );
 
-            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $httpHeader), $statusCode, $httpHeader];
+            return [$this->apiClient->getSerializer()->deserialize($response, '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $httpHeader), $statusCode, $httpHeader];
         } catch (ApiException $e) {
             switch ($e->getCode()) {
                 case 201:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
                 case 401:
-                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
+                    $data = $this->apiClient->getSerializer()->deserialize($e->getResponseBody(), '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Error', $e->getResponseHeaders());
                     $e->setResponseObject($data);
                     break;
             }

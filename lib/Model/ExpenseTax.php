@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Expense\Model;
+namespace Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model;
 
 use \ArrayAccess;
 
@@ -57,7 +57,7 @@ class ExpenseTax implements ArrayAccess
     protected static $swaggerTypes = [
         'id' => 'int',
         'amount' => 'double',
-        'type' => '\Spinen\ConnectWise\Clients\Expense\Model\ExpenseTaxTypeReference'
+        'type' => '\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseTaxTypeReference'
     ];
 
     public static function swaggerTypes()
@@ -200,7 +200,7 @@ class ExpenseTax implements ArrayAccess
 
     /**
      * Gets type
-     * @return \Spinen\ConnectWise\Clients\Expense\Model\ExpenseTaxTypeReference
+     * @return \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseTaxTypeReference
      */
     public function getType()
     {
@@ -209,7 +209,7 @@ class ExpenseTax implements ArrayAccess
 
     /**
      * Sets type
-     * @param \Spinen\ConnectWise\Clients\Expense\Model\ExpenseTaxTypeReference $type
+     * @param \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseTaxTypeReference $type
      * @return $this
      */
     public function setType($type)

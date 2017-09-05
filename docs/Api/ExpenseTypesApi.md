@@ -15,7 +15,7 @@ Method | HTTP request | Description
 
 
 # **expenseTypesCountGet**
-> \Spinen\ConnectWise\Clients\Expense\Model\Count expenseTypesCountGet($conditions)
+> \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Count expenseTypesCountGet($conditions)
 
 
 
@@ -50,7 +50,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Expense\Model\Count**](../Model/Count.md)
+[**\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\Count**](../Model/Count.md)
 
 ### Authorization
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **expenseTypesGet**
-> \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[] expenseTypesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
+> \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[] expenseTypesGet($conditions, $order_by, $childconditions, $customfieldconditions, $page, $page_size)
 
 
 
@@ -109,7 +109,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[]**](../Model/ExpenseType.md)
+[**\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType[]**](../Model/ExpenseType.md)
 
 ### Authorization
 
@@ -171,7 +171,7 @@ void (empty response body)
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **expenseTypesIdGet**
-> \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType expenseTypesIdGet($id)
+> \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType expenseTypesIdGet($id)
 
 
 
@@ -206,7 +206,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType**](../Model/ExpenseType.md)
+[**\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType**](../Model/ExpenseType.md)
 
 ### Authorization
 
@@ -220,7 +220,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **expenseTypesIdPatch**
-> \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType expenseTypesIdPatch($id, $operations)
+> \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType expenseTypesIdPatch($id, $operations)
 
 
 
@@ -237,7 +237,7 @@ Spinen\ConnectWise\Clients\Expense\Configuration::getDefaultConfiguration()->set
 
 $api_instance = new Spinen\ConnectWise\Clients\Expense\Api\ExpenseTypesApi();
 $id = 56; // int | 
-$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Expense\Model\PatchOperation[] | 
+$operations = array(new PatchOperation()); // \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\PatchOperation[] | 
 
 try {
     $result = $api_instance->expenseTypesIdPatch($id, $operations);
@@ -253,11 +253,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **operations** | [**\Spinen\ConnectWise\Clients\Expense\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
+ **operations** | [**\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\PatchOperation[]**](../Model/PatchOperation.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType**](../Model/ExpenseType.md)
+[**\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType**](../Model/ExpenseType.md)
 
 ### Authorization
 
@@ -271,7 +271,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **expenseTypesIdPut**
-> \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType expenseTypesIdPut($id, $expense_type)
+> \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType expenseTypesIdPut($id, $expense_type)
 
 
 
@@ -288,7 +288,7 @@ Spinen\ConnectWise\Clients\Expense\Configuration::getDefaultConfiguration()->set
 
 $api_instance = new Spinen\ConnectWise\Clients\Expense\Api\ExpenseTypesApi();
 $id = 56; // int | 
-$expense_type = new \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType(); // \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType | 
+$expense_type = new \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType(); // \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType | 
 
 try {
     $result = $api_instance->expenseTypesIdPut($id, $expense_type);
@@ -304,11 +304,11 @@ try {
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
  **id** | **int**|  |
- **expense_type** | [**\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType**](../Model/\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType.md)|  |
+ **expense_type** | [**\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType**](../Model/\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType**](../Model/ExpenseType.md)
+[**\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType**](../Model/ExpenseType.md)
 
 ### Authorization
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
 
 # **expenseTypesPost**
-> \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType expenseTypesPost($expense_type)
+> \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType expenseTypesPost($expense_type)
 
 
 
@@ -338,7 +338,7 @@ Spinen\ConnectWise\Clients\Expense\Configuration::getDefaultConfiguration()->set
 Spinen\ConnectWise\Clients\Expense\Configuration::getDefaultConfiguration()->setPassword('YOUR_PASSWORD');
 
 $api_instance = new Spinen\ConnectWise\Clients\Expense\Api\ExpenseTypesApi();
-$expense_type = new \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType(); // \Spinen\ConnectWise\Clients\Expense\Model\ExpenseType | 
+$expense_type = new \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType(); // \Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType | 
 
 try {
     $result = $api_instance->expenseTypesPost($expense_type);
@@ -353,11 +353,11 @@ try {
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **expense_type** | [**\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType**](../Model/\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType.md)|  |
+ **expense_type** | [**\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType**](../Model/\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType.md)|  |
 
 ### Return type
 
-[**\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType**](../Model/ExpenseType.md)
+[**\Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model\ExpenseType**](../Model/ExpenseType.md)
 
 ### Authorization
 

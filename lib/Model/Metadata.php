@@ -27,7 +27,7 @@
  * Do not edit the class manually.
  */
 
-namespace Spinen\ConnectWise\Clients\Expense\Model;
+namespace Spinen\ConnectWise\Clients\Expense\Spinen\ConnectWise\Clients\Expense\Model;
 
 use \ArrayAccess;
 
